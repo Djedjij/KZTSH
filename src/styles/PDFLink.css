@@ -1,0 +1,18 @@
+.a {
+  text-decoration: none;
+}
+
+.reporting-links {
+  display: flex;
+  flex-direction: column;
+}
+.reporting-link {
+  text-decoration: none;
+  color: rgb(9, 84, 197);
+  margin-bottom: 3px;
+}
+.reporting-link:hover {
+  text-decoration: none;
+  color: orange;
+  margin-bottom: 3px;
+}

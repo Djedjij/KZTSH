@@ -1,0 +1,36 @@
+.appeals {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.appeals-content {
+  width: 75%;
+  margin-top: 20px;
+}
+.appeals h3,
+h4 {
+  text-align: center;
+  opacity: 0.8;
+}
+.appeals h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.appeals h4 {
+  margin-bottom: 50px;
+  font-size: larger;
+}
+.appeals p {
+  font-size: 18px;
+}
+.appeals ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.appeals li {
+  color: #3695d9;
+}
+.appeals span {
+  color: black;
+}

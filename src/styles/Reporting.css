@@ -1,0 +1,9 @@
+.reporting {
+  display: flex;
+  justify-content: space-between;
+}
+.reporting-links {
+  width: 65%;
+  text-decoration: none;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,10 @@
+.MainReturnButton {
+  margin-left: 50px;
+  opacity: 0.7;
+  color: #222;
+  text-decoration: none;
+}
+.MainReturnButton:hover {
+  background-color: none;
+  color: rgb(9, 84, 197);
+}

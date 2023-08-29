@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+thead th {
+  background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 768px) {
+  /* стили для маленьких экранов */
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  td,
+  th {
+    white-space: nowrap;
+  }
+}

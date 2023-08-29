@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.phone-contact {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 18px;
+  color: white;
+  height: 20px;
+  margin-left: 950px;
+  width: 230px;
+}
+.phone-contact ul {
+  margin-top: -5px;
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.phone-contact ul:hover {
+  position: relative;
+  z-index: 2;
+  background-color: #555;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+.phone-contact ul li {
+  display: block;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.phone-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,26 @@
+.delivery {
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+.delivery img {
+  margin-bottom: 20px;
+}
+.delivery ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.delivery li {
+  color: #3695d9;
+}
+.delivery span {
+  color: black;
+  
+}

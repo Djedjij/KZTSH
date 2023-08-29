@@ -1,0 +1,6 @@
+.management {
+  display: flex;
+}
+.management-content {
+  width: 70%;
+}
