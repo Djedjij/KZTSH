@@ -22,5 +22,10 @@
 }
 .directorPhotoContacts img {
   margin: auto;
-  height: 90%;
+  height: 400px;
+}
+@media screen and (max-width: 650px) {
+  .director-photo {
+    width: 100%;
+  }
 }

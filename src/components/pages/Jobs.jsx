@@ -7,7 +7,7 @@ import ContentField from "../../UI/ContentField.jsx";
 const Jobs = () => {
   return (
     <div>
-      <h2>Вакансии</h2>
+      <h2 className="header-h2">Вакансии</h2>
       <MainReturnButton />
       <div className="jobs">
         <LeftMenu arr={ABOUT_ROUTES} />

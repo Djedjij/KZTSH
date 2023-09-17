@@ -37,3 +37,15 @@
   margin-left: 20px;
   font-size: 16px;
 }
+@media screen and (max-width: 1200px) {
+  .price-content {
+    width: 100%;
+    padding: 20px;
+  }
+  .price-links {
+    width: 100%;
+  }
+  .header-h2 {
+    margin-left: 20px;
+  }
+}

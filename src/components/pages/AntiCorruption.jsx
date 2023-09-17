@@ -7,7 +7,7 @@ import { anticorruptionLinks } from "../../store/PDFLinks";
 const AntiCorruption = () => {
   return (
     <div>
-      <h2>Противодействие коррупции</h2>
+      <h2 className="header-h2">Противодействие коррупции</h2>
       <MainReturnButton />
       <div className="anticorruption">
         <LeftMenu arr={INFO_ROUTES} />

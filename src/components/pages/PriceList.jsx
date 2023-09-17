@@ -8,9 +8,8 @@ import { pricesLinks } from "../../store/PDFLinks";
 const PriceList = () => {
   return (
     <div>
-      <h2>Прайс-листы</h2>
+      <h2 className="header-h2">Прайс-листы</h2>
       <MainReturnButton />
-
       <div className="price-list">
         <LeftMenu arr={PRODUCTS_ROUTES} />
         <div className="price-content">

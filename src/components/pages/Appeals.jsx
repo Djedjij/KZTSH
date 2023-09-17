@@ -6,7 +6,7 @@ import { INFO_ROUTES } from "../../utils/consts";
 const Appeals = () => {
   return (
     <div>
-      <h2>Обращения граждан</h2>
+      <h2 className="header-h2">Обращения граждан</h2>
       <MainReturnButton />
       <div className="appeals">
         <LeftMenu arr={INFO_ROUTES} />

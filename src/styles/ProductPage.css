@@ -1,0 +1,28 @@
+.product-page {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.product-page-content {
+  width: 75%;
+  margin-top: 20px;
+}
+.product-page-card {
+  display: flex;
+
+  padding: 20px;
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  margin-right: 70px;
+  height: max-content;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.product-page-card-img {
+  width: 200px;
+  height: 200px;
+}
+.product-page-card-text {
+  margin-left: 20px;
+}

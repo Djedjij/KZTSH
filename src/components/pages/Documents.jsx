@@ -6,11 +6,11 @@ import "../../styles/Documents.css";
 const Documents = () => {
   return (
     <div>
-      <h2>Документы</h2>
+      <h2 className="header-h2">Документы</h2>
       <MainReturnButton />
       <div className="documents">
         <LeftMenu arr={ABOUT_ROUTES} />
-        <div className="documents-img">
+        <div className="documents-content">
           <img
             className="big-img"
             src="../../images/documents-images/politika_v_oblasti_kachestva_2022_1.jpg"
@@ -32,7 +32,11 @@ const Documents = () => {
               className="img-link"
               href="../../pdf/Руководство по качеству для поставщиков ОАО КЗТШ.pdf"
             >
-              <img className="pdf-img" src="../../images/pdf.png" alt="pdf" />
+              <img
+                className="pdf-img"
+                src="../../images/pdf-blue.png"
+                alt="pdf"
+              />
             </a>
             <a
               className="documents-link"

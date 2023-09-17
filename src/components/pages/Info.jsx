@@ -6,7 +6,7 @@ import "../../styles/Info.css";
 const Info = () => {
   return (
     <div className="info">
-      <h2>Информация</h2>
+      <h2 className="header-h2">Информация</h2>
       <MainReturnButton />
       <div className="info-container">
         <LeftMenu arr={INFO_ROUTES} />

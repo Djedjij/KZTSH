@@ -11,12 +11,13 @@ import {
   PRODUCTS_ROUTE,
   SERVISES_ROUTE,
 } from "../utils/consts";
+import ServisesNavbar from "./navbars/ServisesNavbar";
 const Navbar = (props) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showDropdownProducts, setShowDropdownProducts] = useState(false);
   const [showDropdownInfo, setShowDropdownInfo] = useState(false);
   const [showDropdownContacts, setShowDropdownContacts] = useState(false);
-
+  const [showDropdownServises, setShowDropdownServises] = useState(false);
   const handleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
@@ -30,6 +31,9 @@ const Navbar = (props) => {
   };
   const handleDropdownContacts = () => {
     setShowDropdownContacts(!showDropdownContacts);
+  };
+  const handleDropdownServises = () => {
+    setShowDropdownServises(!showDropdownServises);
   };
 
   return (
@@ -50,10 +54,14 @@ const Navbar = (props) => {
           </Link>
           {showDropdownProducts && <ProductsNavbar />}
         </li>
-        <li>
+        <li
+          onMouseEnter={handleDropdownServises}
+          onMouseLeave={handleDropdownServises}
+        >
           <Link className="Link" to={SERVISES_ROUTE}>
             Услуги
           </Link>
+          {showDropdownServises && <ServisesNavbar className={"dropdown"} />}
         </li>
         <li onMouseEnter={handleDropdownInfo} onMouseLeave={handleDropdownInfo}>
           <Link className="Link" to={INFO_ROUTE}>

@@ -6,7 +6,7 @@ import { INFO_ROUTES } from "../../utils/consts";
 const Delivery = () => {
   return (
     <div>
-      <h2>Доставка</h2>
+      <h2 className="header-h2">Доставка</h2>
       <MainReturnButton />
       <div className="delivery">
         <LeftMenu arr={INFO_ROUTES} />

@@ -14,9 +14,10 @@ const Products = (props) => {
         </p>
         <Link to="/products">
           <button>Весь каталог ›</button>
+          <span>›</span>
         </Link>
       </div>
-      <div className="product-list">
+      <div className="product-main-list">
         {props.items.map((el) => (
           <Product key={el.id} item={el} />
         ))}

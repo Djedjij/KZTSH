@@ -26,7 +26,8 @@
   margin-bottom: 20px;
 }
 .anticorruption-link img {
-  width: 8%;
+  width: 70px;
+  height: 100%;
 }
 .link-img-text {
   display: flex;
@@ -36,4 +37,16 @@
   margin-top: 20px;
   margin-left: 20px;
   font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .anticorruption-content {
+    width: 100%;
+    padding: 20px;
+  }
+  .anticorruption-links {
+    width: 100%;
+  }
+  .header-h2 {
+    margin-left: 20px;
+  }
 }

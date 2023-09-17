@@ -6,7 +6,7 @@ import { INFO_ROUTES, distribuion } from "../../utils/consts";
 const Distribution = () => {
   return (
     <div>
-      <h2>Товаропроводящая сеть</h2>
+      <h2 className="header-h2">Товаропроводящая сеть</h2>
       <MainReturnButton />
       <div className="distribution">
         <LeftMenu arr={INFO_ROUTES} />

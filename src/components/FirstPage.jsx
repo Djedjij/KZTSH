@@ -15,8 +15,8 @@ const FirstPage = () => {
           <h4>90+</h4>
           <p>Постоянных довольных клиентов по РБ и СНГ</p>
         </div>
-        <div>
-          <h4 className="first-page-h4">100%</h4>
+        <div className="first-page-h4">
+          <h4>100%</h4>
           <p>Гарантия качества нашей продукции</p>
         </div>
       </div>

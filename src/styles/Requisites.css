@@ -46,7 +46,7 @@ a {
   color: rgb(9, 84, 197);
 }
 .pdf-image {
-  width: 50px;
+  width: 60px;
 }
 .requisites-link {
   display: flex;
@@ -58,4 +58,17 @@ a {
 .requisites-link p {
   margin-top: 20px;
   margin-left: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .requisites {
+    margin-right: 0px;
+  }
+  .requisites-content {
+    width: 100%;
+    padding: 20px;
+    margin-right: 0px;
+  }
+  .header-h2 {
+    margin-left: 20px;
+  }
 }

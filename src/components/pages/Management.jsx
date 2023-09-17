@@ -7,7 +7,7 @@ import "../../styles/Management.css";
 const Management = () => {
   return (
     <div>
-      <h2>Руководство</h2>
+      <h2 className="header-h2">Руководство</h2>
       <MainReturnButton />
       <div className="management">
         <LeftMenu arr={CONTACTS_ROUTES} />

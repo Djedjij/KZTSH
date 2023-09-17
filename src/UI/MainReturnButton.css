@@ -8,3 +8,8 @@
   background-color: none;
   color: rgb(9, 84, 197);
 }
+@media screen and (max-width: 1200px) {
+  .MainReturnButton {
+    margin-left: 20px;
+  }
+}

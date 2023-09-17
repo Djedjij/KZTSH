@@ -27,10 +27,21 @@ h4 {
   margin-left: 20px;
   margin-bottom: 10px;
   font-size: 18px;
+  opacity: 0.8;
 }
 .appeals li {
   color: #3695d9;
 }
 .appeals span {
   color: black;
+}
+@media screen and (max-width: 1200px) {
+  .appeals-content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .header-h2 {
+    margin-left: 20px;
+  }
 }

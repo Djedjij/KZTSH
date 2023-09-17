@@ -6,6 +6,7 @@ import Contacts from "../components/pages/Contacts";
 import Delivery from "../components/pages/Delivery";
 import Distribution from "../components/pages/Distribution";
 import Documents from "../components/pages/Documents";
+import Hostel from "../components/pages/Hostel";
 import Info from "../components/pages/Info";
 import Jobs from "../components/pages/Jobs";
 import Main from "../components/pages/Main";
@@ -20,6 +21,7 @@ import Requisites from "../components/pages/Requisites";
 import {
   ABOUT_ROUTE,
   ADMIN_ROUTE,
+  CONTACTS_ROUTE,
   INFO_ROUTE,
   MAIN_ROUTE,
 } from "../utils/consts";
@@ -38,7 +40,7 @@ export const userRoutes = [
     Component: Info,
   },
   {
-    path: "/contacts",
+    path: CONTACTS_ROUTE,
     Component: Contacts,
   },
   {
@@ -96,6 +98,10 @@ export const userRoutes = [
   {
     path: "/delivery",
     Component: Delivery,
+  },
+  {
+    path: "/hostel",
+    Component: Hostel,
   },
 ];
 

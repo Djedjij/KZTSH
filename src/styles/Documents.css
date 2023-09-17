@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
 }
-.documents-img {
+.documents-content {
   width: 70%;
 }
 .big-img {
   width: 90%;
 }
+
 .documents-a {
   margin-bottom: 20px;
   margin-left: 40px;
@@ -31,7 +32,27 @@
 }
 .documents-h3 {
   opacity: 0.8;
-  font-size: 26px;
+  font-size: 1.5em;
   margin-left: 40px;
   margin-top: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .documents-content {
+    width: 100%;
+    padding: 20px;
+  }
+  .header-h2 {
+    margin-left: 20px;
+  }
+  .documents-h3 {
+    font-size: 1em;
+  }
+  .documents-a {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 635px) {
+  .documents-a {
+    margin-left: 20px;
+  }
 }

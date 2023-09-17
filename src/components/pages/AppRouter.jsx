@@ -5,9 +5,12 @@ import { Routes, Route } from "react-router";
 import Footer from "../Footer";
 import ButtonUp from "../../UI/ButtonUp";
 import ProductPage from "./ProductPage";
+import Category from "./Category";
+import Grid from "../../UI/Grid";
 
 const AppRouter = () => {
   const isAuth = true;
+
   return (
     <div className="wrapper">
       <Header />
@@ -21,7 +24,9 @@ const AppRouter = () => {
           <Route key={path} path={path} element={<Component />} exact />
         ))}
         <Route path="/products/:productId" element={<ProductPage />} />
+        <Route path="/products/:productId/:categoryId" element={<Category />} />
       </Routes>
+      <Grid/>
       <Footer />
     </div>
   );

@@ -13,20 +13,46 @@
 }
 .content-header {
   margin-top: 20px;
-
-  font-size: 20px;
+  font-size: 1.2em;
   width: 50%;
   color: rgb(9, 84, 197);
 }
 .content-desc {
   display: flex;
+  font-size: 1em;
   flex-direction: column;
   margin-top: 10px;
-  margin-bottom: 20pxs;
+  margin-bottom: 20px;
 }
 .content-salary {
   float: right;
   margin-right: 20px;
   opacity: 0.8;
-  font-size: 16px;
+  font-size: 1em;
+}
+@media screen and (max-width: 1200px) {
+  .contentField {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .content-header {
+    font-size: 1em;
+  }
+  .content-desc p {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+  }
+  .content-salary {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content-header {
+    margin-left: -50px;
+  }
+  .content-desc p {
+    margin-left: -50px;
+  }
 }

@@ -1,0 +1,28 @@
+.hostel {
+  display: flex;
+  justify-content: space-between;
+}
+.hostel-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+.hostel-content-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.hostel-content h3 {
+  font-size: 20px;
+  opacity: 0.8;
+}
+.hostel-content h5 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.hostel-content img {
+  width: 59%;
+  height: 58%;
+}

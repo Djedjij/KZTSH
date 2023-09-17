@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Requisites = () => {
   return (
     <div>
-      <h2>Реквизиты</h2>
+      <h2 className="header-h2">Реквизиты</h2>
       <MainReturnButton />
       <div className="requisites">
         <LeftMenu arr={ABOUT_ROUTES} />
@@ -38,7 +38,11 @@ const Requisites = () => {
               </tbody>
             </table>
             <Link className="requisites-link" to="">
-              <img className="pdf-image" src="../../images/pdf.png" alt="pdf" />
+              <img
+                className="pdf-image"
+                src="../../images/pdf-blue.png"
+                alt="pdf"
+              />
               <p>Скачать PDF версию с печатью и подписью</p>
             </Link>
           </div>

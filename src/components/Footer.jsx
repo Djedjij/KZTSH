@@ -17,7 +17,9 @@ const Footer = () => {
             </Link>
           </p>
           <p>Жодино, ул. Кузнечная, 26</p>
-          <button>Каталог продукции</button>
+          <Link to={"/products"}>
+            <button>Каталог продукции</button>
+          </Link>
         </div>
         <InfoNavbar className={"footer-info"} />
         <ContactsNavbar className={"footer-info"} />
@@ -45,7 +47,6 @@ const Footer = () => {
           ></iframe>
         </div>
       </div>
-
       <div className="footer-year">
         <hr />
         <p>

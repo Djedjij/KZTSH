@@ -5,6 +5,7 @@ import FirstPage from "./FirstPage";
 
 import Products from "../Products";
 import { items } from "../../utils/consts";
+import IconsLinks from "../../UI/IconsLinks";
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <div className="app">
         <FirstPage />
       </div>
+      <IconsLinks />
       <Products items={items} />
     </div>
   );
