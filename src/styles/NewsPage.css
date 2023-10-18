@@ -1,0 +1,13 @@
+@media screen and (max-width: 1200px) {
+  .news-page-content {
+    width: 100%;
+    padding: 20px;
+    margin-right: 0;
+  }
+  .news-page-content p {
+    font-size: 16px;
+  }
+  .news-page-content img {
+    width: 80%;
+  }
+}

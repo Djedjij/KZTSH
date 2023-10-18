@@ -2,18 +2,18 @@ import React from "react";
 import LeftMenu from "../../UI/LeftMenu";
 import { CONTACTS_ROUTES, marketingContacts } from "../../utils/consts";
 import MainReturnButton from "../../UI/MainReturnButton";
-import DirectorsContacts from "../ContactsTable";
+import ContactsTable from "../ContactsTable";
 
 import "../../styles/Management.css";
 const MarketingTeam = () => {
   return (
     <div>
-      <h2 className="header-h2">Руководство</h2>
+      <h2 className="header-h2">Отдел маркетинга</h2>
       <MainReturnButton />
       <div className="management">
         <LeftMenu arr={CONTACTS_ROUTES} />
         <div className="management-content">
-          <DirectorsContacts contactsList={marketingContacts} />
+          <ContactsTable contactsList={marketingContacts} />
         </div>
       </div>
     </div>

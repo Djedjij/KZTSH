@@ -1,0 +1,34 @@
+.galery {
+  display: flex;
+  justify-content: space-between;
+}
+.galery-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+  gap: 10px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  max-height: 200px;
+}
+@media screen and (max-width: 1200px) {
+  .galery-content {
+    width: 100%;
+    padding: 10px;
+  }
+  .galery {
+    width: 100%;
+    padding: 20px;
+    margin-left: 20px;
+  }
+}

@@ -11,7 +11,7 @@ const Distribution = () => {
       <div className="distribution">
         <LeftMenu arr={INFO_ROUTES} />
         <div className="distribution-content">
-          <table className="table">
+          <table className="distribution-table">
             <thead>
               <tr>
                 <th>НАИМЕНОВАНИЕ И ВИД СУБЪЕКТА ТПС</th>

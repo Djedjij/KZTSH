@@ -1,0 +1,44 @@
+.servises {
+  display: flex;
+  justify-content: space-between;
+}
+.servises-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.servise {
+  margin-bottom: 50px;
+}
+.servises-content h1 {
+  margin-top: 20px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.servise img {
+  width: 50px;
+  height: 50px;
+}
+.service-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.service-icon h3 {
+  font-size: 24px;
+  margin-left: 20px;
+  opacity: 0.8;
+}
+.servise-ul {
+  list-style-type: none;
+  margin-left: 70px;
+  font-weight: 300;
+}
+@media screen and (max-width: 1200px) {
+  .servises-content {
+    width: 100%;
+    padding: 20px;
+  }
+}

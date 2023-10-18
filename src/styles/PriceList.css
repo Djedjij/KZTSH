@@ -26,7 +26,8 @@
   margin-bottom: 20px;
 }
 .price-link img {
-  width: 8%;
+  width: 70px;
+  height: 100%;
 }
 .link-img-text {
   display: flex;

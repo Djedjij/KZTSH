@@ -87,6 +87,7 @@ a {
 }
 .footer-year {
   position: absolute;
+
   width: 100%;
   bottom: 0;
   text-align: center;
@@ -150,6 +151,10 @@ a {
   }
 }
 @media screen and (max-width: 635px) {
+  .footer {
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
   .footer-contacts button {
     display: none;
   }
@@ -158,6 +163,14 @@ a {
     margin-bottom: 20px;
   }
   .icon-link {
-    margin-left: -20px;
+    margin-left: -40px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer-info {
+    width: 40%;
+  }
+  .footer-info-adapt {
+    display: none;
   }
 }

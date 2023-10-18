@@ -22,7 +22,7 @@ const Footer = () => {
           </Link>
         </div>
         <InfoNavbar className={"footer-info"} />
-        <ContactsNavbar className={"footer-info"} />
+        <ContactsNavbar className={"footer-info footer-info-adapt"} />
         <div className="links">
           <Link className="icon-link" to="https://t.me/kztsh_info">
             <img src="./images/Telegram.svg" alt="telegram" />

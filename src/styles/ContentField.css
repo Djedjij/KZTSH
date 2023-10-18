@@ -27,8 +27,6 @@
 .content-salary {
   float: right;
   margin-right: 20px;
-  opacity: 0.8;
-  font-size: 1em;
 }
 @media screen and (max-width: 1200px) {
   .contentField {
@@ -38,7 +36,7 @@
 }
 @media screen and (max-width: 780px) {
   .content-header {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .content-desc p {
     font-size: 0.8em;
@@ -48,11 +46,28 @@
     font-size: 0.8em;
   }
 }
-@media screen and (max-width: 600px) {
-  .content-header {
-    margin-left: -50px;
+@media screen and (max-width: 650px) {
+  .content {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
-  .content-desc p {
-    margin-left: -50px;
+  .content-header {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .content-desc {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 20px;
+  }
+  .content-salary {
+    float: none;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 650px) {
+  .content {
+    margin-left: 10px;
   }
 }

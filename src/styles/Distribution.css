@@ -14,7 +14,7 @@
 .distribution p {
   margin-bottom: 10px;
 }
-.table {
+.distribution-table {
   width: 100%;
   margin-bottom: 20px;
   border: 5px solid #fff;
@@ -25,7 +25,7 @@
   font-size: 15px;
   background: #fff !important;
 }
-.table th {
+.distribution-table th {
   font-weight: bold;
   padding: 7px;
   background: #3695d9c8;
@@ -36,14 +36,14 @@
   border-bottom: 2px solid #3695d9;
   color: white;
 }
-.table td {
+.distribution-table td {
   padding: 7px;
   border: none;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
   font-size: 15px;
 }
-.table tbody tr:nth-child(even) {
+.distribution-table tbody tr:nth-child(even) {
   background: #f8f8f8 !important;
 }
 @media screen and (max-width: 1200px) {
@@ -57,5 +57,25 @@
   }
   .header-h2 {
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .distribution-table {
+    width: 100%;
+    padding: 10px;
+  }
+  .distribution-table th {
+    font-size: 10px;
+  }
+  .distribution-table td {
+    font-size: 10px;
+  }
+  .distribution-table td p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .distribution-table {
+    margin-left: -10px;
   }
 }

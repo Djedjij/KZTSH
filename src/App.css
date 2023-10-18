@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .app {
   background-image: url("/public/images/backround-main.jpg");
   background-size: cover;
@@ -13,8 +14,10 @@
 }
 /* header  header  header  header  header  header  header  header  header  header  header  header  header  header  header  header  header */
 .bm-burger-button {
-  position: fixed;
-  width: 36px;
+  position: relative;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: -40px;
   height: 30px;
   left: 36px;
   top: 25px;
@@ -94,6 +97,13 @@
 
 .main-navbar li {
   margin: 0 10px;
+}
+.dropdown-burger-menu {
+  margin-top: -10px;
+}
+.MenuItem {
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .main-navbar .Link {
@@ -367,4 +377,31 @@
 .burger-link {
   font-size: 0.9em;
   margin-left: 30px;
+}
+
+/* news-slider1111111111111111111111111111111111111111 */
+.news-slider {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.slider-news-wrap {
+  padding: 30px;
+  width: 93%;
+  margin-left: 50px;
+}
+.news-slider-date {
+  font-size: 10px;
+  font-weight: 200;
+  margin-top: -5px;
+}
+@media screen and (max-width: 1073px) {
+  .news-slider {
+    display: none;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .wrapper {
+    width: 1920px;
+    margin: 0 auto;
+  }
 }

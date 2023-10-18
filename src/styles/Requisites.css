@@ -72,3 +72,19 @@ a {
     margin-left: 20px;
   }
 }
+@media screen and (max-width: 500px) {
+  .requisites-content {
+    width: 100%;
+    padding: 20px;
+  }
+  .requisites-link {
+    width: 100%;
+  }
+  .requisites-link img {
+    width: 20%;
+    height: 20%;
+  }
+  .table-number {
+    display: none;
+  }
+}

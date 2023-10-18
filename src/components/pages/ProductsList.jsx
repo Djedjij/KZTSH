@@ -7,8 +7,10 @@ import { Link } from "react-router-dom";
 const ProductsList = () => {
   return (
     <div>
-      <h2>Каталог продукции</h2>
+      <h2 className="header-h2">Каталог продукции</h2>
+
       <MainReturnButton />
+
       <div className="product-list">
         <LeftMenu arr={itemsLeftMenu} />
         <div className="product-content">

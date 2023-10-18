@@ -1,0 +1,116 @@
+.admin-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.admin-content h2 {
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+.admin-content input {
+  margin-bottom: 20px;
+  border: 1px solid #3695d9;
+  border-radius: 2px;
+}
+.admin-content:focus {
+  background-color: lightblue;
+}
+
+.admin-content textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+label {
+  font-size: 18px;
+}
+.admin-content .red-btn {
+  background-color: rgb(197, 44, 44);
+  color: #f8f8f8;
+}
+.admin-content button {
+  cursor: pointer;
+  background-color: #3695d9;
+  color: #f8f8f8;
+}
+.admin-data {
+  display: flex;
+  flex-direction: column;
+}
+.blue-text {
+  color: #3695d9;
+}
+.admin-elem {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: max-content;
+  margin-bottom: 20px;
+  border: 2px solid #3695d9;
+  border-radius: 4px;
+  padding: 10px;
+}
+.admin-elem img {
+  width: 300px;
+}
+.admin-elem button {
+  width: 50%;
+}
+
+.admin-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid gray;
+  margin-bottom: 20px;
+}
+
+.category-table {
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+}
+.category-table thead th {
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  background: #d8d8d8;
+  font-size: 14px;
+}
+.category-table thead tr th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.category-table thead tr th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.category-table tbody td {
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  vertical-align: top;
+}
+.category-table tbody tr:nth-child(even) {
+  background: #f3f3f3;
+}
+.category-table tbody tr td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.category-table tbody tr td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.table-characteristics {
+  padding: 20px;
+}

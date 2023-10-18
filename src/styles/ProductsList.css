@@ -45,6 +45,26 @@
 }
 .product-card-desc p {
   font-size: 0.86667em;
-
   opacity: 0.6;
+}
+
+@media screen and (max-width: 1200px) {
+  .product-content {
+    width: 100%;
+    margin-right: 0;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .product-content {
+    flex-wrap: wrap;
+  }
+  .product-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .product-card {
+    padding: 10px;
+  }
 }

@@ -7,11 +7,10 @@ import "../../styles/ProductPage.css";
 import { Link } from "react-router-dom";
 const ProductPage = () => {
   const { productId } = useParams();
-
   const product = items.find((product) => product.id === Number(productId));
   return (
     <div>
-      <h2>{product.title}</h2>
+      <h2 className="header-h2">{product.title}</h2>
       <MainReturnButton />
       <div className="product-page">
         <LeftMenu arr={itemsLeftMenu} />
@@ -26,7 +25,7 @@ const ProductPage = () => {
                 />
                 <div className="product-page-card-text">
                   <Link to={`/products/${product.id}/${category.id}`}>
-                    {category.name}
+                    <h3>{category.name}</h3>
                   </Link>
                   <hr />
                   <p>{category.description}</p>

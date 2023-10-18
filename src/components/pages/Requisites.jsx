@@ -22,7 +22,7 @@ const Requisites = () => {
             <table className="table">
               <thead>
                 <tr>
-                  <th>№</th>
+                  <th className="table-number">№</th>
                   <th>Наименование</th>
                   <th>Сведения</th>
                 </tr>
@@ -30,7 +30,7 @@ const Requisites = () => {
               <tbody>
                 {requisites.map((el) => (
                   <tr key={el.number}>
-                    <td>{el.number}</td>
+                    <td className="table-number">{el.number}</td>
                     <td>{el.name}</td>
                     <td>{el.info}</td>
                   </tr>

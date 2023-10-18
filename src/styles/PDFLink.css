@@ -5,10 +5,12 @@
 .reporting-links {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 .reporting-link {
   text-decoration: none;
-  color: rgb(9, 84, 197);
+  color: #3695d9;
   margin-bottom: 3px;
 }
 .reporting-link:hover {
