@@ -29,12 +29,7 @@ const ProductsList = () => {
   return (
     <div>
       <h2 className="header-h2">Каталог продукции</h2>
-<<<<<<< HEAD
-=======
-
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       <MainReturnButton />
-
       <div className="product-list">
         <LeftMenu arr={itemsLeftMenu} />
         <div className="product-content">

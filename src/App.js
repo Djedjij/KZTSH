@@ -2,14 +2,9 @@ import React from "react";
 import "./App.css";
 import AppRouter from "./components/pages/AppRouter";
 import { BrowserRouter, useLocation } from "react-router-dom";
-<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { fetchGalery, fetchItems, fetchNews, fetchVideo } from "./http/allApi";
 import ItemContext from "./utils/context";
-=======
-import { useEffect } from "react";
-
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 function App() {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -17,7 +12,6 @@ function App() {
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [pathname]);
-<<<<<<< HEAD
     return null;
   };
   const [news, setNews] = useState([]);
@@ -89,16 +83,6 @@ function App() {
         <AppRouter />
       </BrowserRouter>
     </ItemContext.Provider>
-=======
-
-    return null;
-  };
-  return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <AppRouter />
-    </BrowserRouter>
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   );
 }
 

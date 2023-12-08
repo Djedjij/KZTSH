@@ -9,15 +9,9 @@ import Grid from "../../UI/Grid";
 import PartnersGrid from "../../UI/PartnersGrid";
 import NewsPage from "./NewsPage";
 import NewsSlider from "../../UI/NewsSlider";
-<<<<<<< HEAD
 import Video from "../../UI/Video";
 
 const AppRouter = () => {
-=======
-
-const AppRouter = () => {
-  const isAuth = true;
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return (
     <div className="wrapper">
       <Header />
@@ -35,10 +29,7 @@ const AppRouter = () => {
       </Routes>
       <Grid />
       <PartnersGrid />
-<<<<<<< HEAD
       <Video />
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       <NewsSlider />
       <Footer />
     </div>

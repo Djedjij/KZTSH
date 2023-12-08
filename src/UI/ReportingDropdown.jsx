@@ -7,11 +7,7 @@ const ReportingDropdown = ({ reporting, header }) => {
 
   const dropdownAnimation = useSpring({
     opacity: isOpen ? 1 : 0,
-<<<<<<< HEAD
     maxHeight: isOpen ? "400px" : "0px",
-=======
-    maxHeight: isOpen ? "200px" : "0px",
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
     config: {
       duration: 300, // Длительность анимации
       delay: isOpen ? 0 : 200, // Задержка перед началом анимации исчезновения

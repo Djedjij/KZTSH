@@ -5,23 +5,16 @@ import {
   addDirectorContacts,
 } from "../../http/allApi";
 import "../../styles/AdminStyles/NewsAdmin.css";
-<<<<<<< HEAD
 import { directorContactsArr } from "../../utils/consts";
 
 const DirectorContactsAdmin = () => {
   const [directorContacts, setDirectorContacts] = useState([]);
   const [load, setLoad] = useState(false);
   const [error, setError] = useState(null);
-=======
-
-const DirectorContactsAdmin = () => {
-  const [directorContacts, setDirectorContacts] = useState([]);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   const [formData, setFormData] = useState({
     name: "",
     job: "",
     internalPhone: "",
-<<<<<<< HEAD
     phone: "",
   });
 
@@ -70,19 +63,6 @@ const DirectorContactsAdmin = () => {
     const updatedDirectorContacts = await fetchDirectorContacts();
     setDirectorContacts(updatedDirectorContacts);
     setLoad(false);
-=======
-    phone: Number(),
-  });
-
-  useEffect(() => {
-    fetchDirectorContacts().then((data) => setDirectorContacts(data));
-  }, []);
-
-  const rerenderingDirectorContacts = async (id) => {
-    await deleteDirectorContacts(id);
-    const updatedDirectorContacts = await fetchDirectorContacts();
-    setDirectorContacts(updatedDirectorContacts);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   };
 
   const handleInputChange = (e) => {
@@ -94,10 +74,7 @@ const DirectorContactsAdmin = () => {
   };
 
   const handleSubmit = async (e) => {
-<<<<<<< HEAD
     setLoad(true);
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
     e.preventDefault();
     try {
       const formDataToSend = new FormData();
@@ -109,20 +86,12 @@ const DirectorContactsAdmin = () => {
       formDataToSend.append("phone", formData.phone);
 
       await addDirectorContacts(formDataToSend);
-<<<<<<< HEAD
       setLoad(false);
-=======
-
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       setFormData({
         name: "",
         job: "",
         internalPhone: "",
-<<<<<<< HEAD
         phone: "",
-=======
-        phone: Number(),
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       });
 
       const updatedDirectorContacts = await fetchDirectorContacts();
@@ -131,7 +100,6 @@ const DirectorContactsAdmin = () => {
       console.error("Ошибка при добавлении новости:", error);
     }
   };
-<<<<<<< HEAD
 
   if (load) {
     return (
@@ -144,8 +112,6 @@ const DirectorContactsAdmin = () => {
     return <div className="error">{error}</div>;
   }
 
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return (
     <div>
       <h2>Добавить информацию</h2>
@@ -222,12 +188,9 @@ const DirectorContactsAdmin = () => {
           </tbody>
         </table>
       </div>
-<<<<<<< HEAD
       <button onClick={() => addAllDirectorsContacts(directorContactsArr)}>
         Добавить все данные с фронта
       </button>
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
     </div>
   );
 };

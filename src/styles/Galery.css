@@ -14,7 +14,6 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   gap: 10px;
 }
-<<<<<<< HEAD
 .galery-description p {
   font-weight: 700;
   font-size: 16px;
@@ -52,14 +51,6 @@
   color: rgb(12, 101, 235);
   font-weight: 700;
   opacity: 1;
-=======
-
-.image-gallery img {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-  max-height: 200px;
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 }
 @media screen and (max-width: 1200px) {
   .galery-content {
@@ -67,15 +58,10 @@
     padding: 10px;
   }
   .galery {
-<<<<<<< HEAD
-=======
-    width: 100%;
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
     padding: 20px;
     margin-left: 20px;
   }
 }
-<<<<<<< HEAD
 @media screen and (max-width: 600px) {
   .galery {
     width: 100%;
@@ -117,5 +103,3 @@
 .slider-img {
   height: 100% !important;
 }
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe

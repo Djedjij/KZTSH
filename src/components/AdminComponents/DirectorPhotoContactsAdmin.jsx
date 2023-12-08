@@ -8,7 +8,6 @@ import "../../styles/AdminStyles/NewsAdmin.css";
 
 const DirectorPhotoContactsAdmin = () => {
   const [directorPhotoContacts, setDirectorPhotoContacts] = useState([]);
-<<<<<<< HEAD
   const [load, setLoad] = useState(false);
   const [error, setError] = useState(null);
   const [formData, setFormData] = useState({
@@ -40,22 +39,6 @@ const DirectorPhotoContactsAdmin = () => {
         setDirectorPhotoContacts(data);
       }
     });
-=======
-  const [formData, setFormData] = useState({
-    name: "",
-    job: "",
-    image: null, // Добавляем поле для файла изображения
-  });
-
-  useEffect(() => {
-    fetchDirectorPhotoContacts().then((data) => setDirectorPhotoContacts(data));
-  }, []);
-
-  const rerenderingDirectorPhotoContacts = async (id) => {
-    await deleteDirectorPhotoContacts(id);
-    const updatedDirectorPhotoContacts = await fetchDirectorPhotoContacts();
-    setDirectorPhotoContacts(updatedDirectorPhotoContacts);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   };
 
   const handleInputChange = (e) => {
@@ -77,10 +60,7 @@ const DirectorPhotoContactsAdmin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-<<<<<<< HEAD
       setLoad(true);
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       const formDataToSend = new FormData();
 
       // Добавляем данные из state в объект FormData
@@ -90,18 +70,13 @@ const DirectorPhotoContactsAdmin = () => {
       formDataToSend.append("image", formData.image);
 
       await addDirectorPhotoContacts(formDataToSend);
-<<<<<<< HEAD
       setLoad(false);
-=======
-
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       setFormData({
         name: "",
         job: "",
         image: null,
       });
 
-<<<<<<< HEAD
       await fetchDirectorPhotoContacts().then((data) => {
         setLoad(false);
         if (data.error) {
@@ -110,16 +85,11 @@ const DirectorPhotoContactsAdmin = () => {
           setDirectorPhotoContacts(data);
         }
       });
-=======
-      const updatedDirectorPhotoContacts = await fetchDirectorPhotoContacts();
-      setDirectorPhotoContacts(updatedDirectorPhotoContacts);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
     } catch (error) {
       console.error("Ошибка при добавлении новости:", error);
     }
   };
 
-<<<<<<< HEAD
   // const addAllDirectorsPhotoContacts = async (directorPhotoContactsArr) => {
   //   for (const contact of directorPhotoContactsArr) {
   //     // Создаем объект FormData для каждого контакта
@@ -155,8 +125,6 @@ const DirectorPhotoContactsAdmin = () => {
   if (error) {
     return <div className="error">{error}</div>;
   }
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return (
     <div className="admin-content">
       <h2>Добавить фото руководства</h2>

@@ -11,18 +11,14 @@ import ReportingLinksAdmin from "./ReportingLinksAdmin";
 
 const ReportingAdmin = () => {
   const [Reporting, setReporting] = useState([]);
-<<<<<<< HEAD
   const [load, setLoad] = useState(false);
   const [error, setError] = useState(null);
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   const [reportingLinksOpen, setReportingLinksOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
   });
 
   useEffect(() => {
-<<<<<<< HEAD
     setLoad(true);
     fetchReporting()
       .then((data) => {
@@ -90,26 +86,6 @@ const ReportingAdmin = () => {
         setLoad(false);
         setError(error.message || "Произошла ошибка сети");
       });
-=======
-    fetchReporting().then((data) => setReporting(data));
-  }, []);
-
-  const renderReporting = async () => {
-    const updatedReporting = await fetchReporting();
-    setReporting(updatedReporting);
-  };
-
-  const rerenderingReporting = async (id) => {
-    await deleteReporting(id);
-    const updatedReporting = await fetchReporting();
-    setReporting(updatedReporting);
-  };
-
-  const rerenderingReportingLinks = async (id) => {
-    await deleteReportingLink(id);
-    const updatedReporting = await fetchReporting();
-    setReporting(updatedReporting);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -122,10 +98,7 @@ const ReportingAdmin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-<<<<<<< HEAD
       setLoad(true);
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       const formDataToSend = new FormData();
 
       // Добавляем данные из state в объект FormData
@@ -134,7 +107,6 @@ const ReportingAdmin = () => {
       setFormData({
         name: "",
       });
-<<<<<<< HEAD
       await fetchReporting().then((data) => {
         setLoad(false);
         if (data.error) {
@@ -143,17 +115,11 @@ const ReportingAdmin = () => {
           setReporting(data);
         }
       });
-=======
-
-      const updatedReporting = await fetchReporting();
-      setReporting(updatedReporting);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
     } catch (error) {
       console.error("Ошибка при добавлении новости:", error);
     }
   };
 
-<<<<<<< HEAD
   if (load) {
     return (
       <div className="loader-wrapper">
@@ -165,8 +131,6 @@ const ReportingAdmin = () => {
     return <div className="error">{error}</div>;
   }
 
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return (
     <div className="admin-content">
       <h2>Создать новую отчетность</h2>

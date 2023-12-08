@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { $host, $authHost } from ".";
 import jwtDecode from "jwt-decode";
 
@@ -46,29 +45,10 @@ export const addNews = async (formData) => {
   } catch (error) {
     return { error: error.message || "Error adding news" };
   }
-=======
-import { $host } from ".";
-
-// news-api
-export const fetchNews = async () => {
-  const { data } = await $host.get("api/news");
-  return data;
-};
-
-export const deleteNews = async (id) => {
-  const { data } = await $host.delete("api/news/" + id);
-  return data;
-};
-
-export const addNews = async (formData) => {
-  const { data } = await $host.post("api/news/", formData);
-  return data;
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 };
 
 // galery-api
 export const fetchGalery = async () => {
-<<<<<<< HEAD
   try {
     const { data } = await $host.get("api/galery");
     return data;
@@ -103,25 +83,10 @@ export const addGalery = async (formData) => {
   } catch (error) {
     return { error: error.message || "Error adding gallery item" };
   }
-=======
-  const { data } = await $host.get("api/galery");
-  return data;
-};
-
-export const deleteGalery = async (id) => {
-  const { data } = await $host.delete("api/galery/" + id);
-  return data;
-};
-
-export const addGalery = async (formData) => {
-  const { data } = await $host.post("api/galery/", formData);
-  return data;
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 };
 
 // marketing-contacts-api
 export const fetchMarketingContacts = async () => {
-<<<<<<< HEAD
   try {
     const { data } = await $host.get("api/marketingContacts");
     return data;
@@ -156,25 +121,10 @@ export const addMarketingContacts = async (formData) => {
   } catch (error) {
     return { error: error.message || "Error adding marketing contact" };
   }
-=======
-  const { data } = await $host.get("api/marketingContacts");
-  return data;
-};
-
-export const deleteMarketingContacts = async (id) => {
-  const { data } = await $host.delete("api/marketingContacts/" + id);
-  return data;
-};
-
-export const addMarketingContacts = async (formData) => {
-  const { data } = await $host.post("api/marketingContacts/", formData);
-  return data;
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 };
 
 // director-contacts-api
 export const fetchDirectorContacts = async () => {
-<<<<<<< HEAD
   try {
     const { data } = await $host.get("api/directorContacts");
     return data;
@@ -209,25 +159,10 @@ export const addDirectorContacts = async (formData) => {
   } catch (error) {
     return { error: error.message || "Error adding director contact" };
   }
-=======
-  const { data } = await $host.get("api/directorContacts");
-  return data;
-};
-
-export const deleteDirectorContacts = async (id) => {
-  const { data } = await $host.delete("api/directorContacts/" + id);
-  return data;
-};
-
-export const addDirectorContacts = async (formData) => {
-  const { data } = await $host.post("api/directorContacts/", formData);
-  return data;
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 };
 
 // director-photo-contacts-api
 export const fetchDirectorPhotoContacts = async () => {
-<<<<<<< HEAD
   try {
     const { data } = await $host.get("api/directorPhotoContacts");
     return data;
@@ -257,19 +192,6 @@ export const addDirectorPhotoContacts = async (formData) => {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
   });
-=======
-  const { data } = await $host.get("api/directorPhotoContacts");
-  return data;
-};
-
-export const deleteDirectorPhotoContacts = async (id) => {
-  const { data } = await $host.delete("api/directorPhotoContacts/" + id);
-  return data;
-};
-
-export const addDirectorPhotoContacts = async (formData) => {
-  const { data } = await $host.post("api/directorPhotoContacts/", formData);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return data;
 };
 
@@ -280,54 +202,38 @@ export const fetchReporting = async () => {
 };
 
 export const deleteReporting = async (id) => {
-<<<<<<< HEAD
   const { data } = await $host.delete("api/reporting/" + id, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
   });
-=======
-  const { data } = await $host.delete("api/reporting/" + id);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return data;
 };
 
 export const addReporting = async (formData) => {
-<<<<<<< HEAD
   const { data } = await $host.post("api/reporting/", formData, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
   });
-=======
-  const { data } = await $host.post("api/reporting/", formData);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return data;
 };
 
 export const addReportingLink = async (formData, id) => {
-<<<<<<< HEAD
   const { data } = await $host.post("api/reporting/addLink/" + id, formData, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
   });
-=======
-  const { data } = await $host.post("api/reporting/addLink/" + id, formData);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return data;
 };
 
 export const deleteReportingLink = async (id) => {
-<<<<<<< HEAD
   const { data } = await $host.delete("api/reporting/deleteLink/" + id, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
   });
-=======
-  const { data } = await $host.delete("api/reporting/deleteLink/" + id);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return data;
 };
 
@@ -338,28 +244,20 @@ export const fetchItems = async () => {
 };
 
 export const deleteItems = async (id) => {
-<<<<<<< HEAD
   const { data } = await $host.delete("api/items/" + id, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
   });
-=======
-  const { data } = await $host.delete("api/items/" + id);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return data;
 };
 
 export const addItems = async (formData) => {
-<<<<<<< HEAD
   const { data } = await $host.post("api/items/", formData, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
   });
-=======
-  const { data } = await $host.post("api/items/", formData);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return data;
 };
 
@@ -370,20 +268,15 @@ export const fetchCategory = async () => {
 };
 
 export const deleteCategory = async (id) => {
-<<<<<<< HEAD
   const { data } = await $host.delete("api/category/" + id, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
     },
   });
-=======
-  const { data } = await $host.delete("api/category/" + id);
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return data;
 };
 
 export const addCategory = async (formData, id) => {
-<<<<<<< HEAD
   const { data } = await $host.post("api/category/" + id, formData, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -430,37 +323,22 @@ export const addTableCharacteristics = async (formData, id) => {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
     }
-=======
-  const { data } = await $host.post("api/category/" + id, formData);
-  return data;
-};
-
-export const addTableCharacteristics = async (formData, id) => {
-  const { data } = await $host.post(
-    "api/category/addTableCharacteristics/" + id,
-    formData
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   );
   return data;
 };
 
 export const deleteTableCharacteristics = async (id) => {
   const { data } = await $host.delete(
-<<<<<<< HEAD
     "api/category/deleteTableCharacteristics/" + id,
     {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
     }
-=======
-    "api/category/deleteTableCharacteristics/" + id
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   );
   return data;
 };
 
-<<<<<<< HEAD
 export const addTableNameCharacteristics = async (formData, id) => {
   const { data } = await $host.post(
     "api/category/addTableNameCharacteristics/" + id,
@@ -470,17 +348,10 @@ export const addTableNameCharacteristics = async (formData, id) => {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
     }
-=======
-export const addCharacteristics = async (formData, id) => {
-  const { data } = await $host.post(
-    "api/category/addCharacteristics/" + id,
-    formData
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   );
   return data;
 };
 
-<<<<<<< HEAD
 export const deleteTableNameCharacteristics = async (id) => {
   const { data } = await $host.delete(
     "api/category/deleteTableNameCharacteristics/" + id,
@@ -512,11 +383,3 @@ export const checkToken = async () => {
   localStorage.setItem("token", data.token);
   return jwtDecode(data.token);
 };
-=======
-export const deleteCharacteristics = async (id) => {
-  const { data } = await $host.delete(
-    "api/category/deleteCharacteristics/" + id
-  );
-  return data;
-};
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe

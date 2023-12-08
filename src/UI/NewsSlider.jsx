@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-<<<<<<< HEAD
 
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
@@ -14,14 +13,6 @@ const NewsSlider = () => {
   const itemsProps = useContext(ItemContext);
   const { news, error, load } = itemsProps;
 
-=======
-import { news } from "../utils/consts.js";
-import { Link } from "react-router-dom";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-const NewsSlider = () => {
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   const settings = {
     dots: true,
     infinite: true,
@@ -31,7 +22,6 @@ const NewsSlider = () => {
     autoplay: true,
     autoplaySpeed: 5000,
   };
-<<<<<<< HEAD
   if (error) {
     return <ErrorMessage />;
   }
@@ -42,8 +32,6 @@ const NewsSlider = () => {
       </div>
     );
   }
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return (
     <div className="news-slider">
       <h2>Новости</h2>

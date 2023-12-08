@@ -8,95 +8,9 @@
   width: 70%;
   margin-right: 50px;
   margin-bottom: 50px;
-<<<<<<< HEAD
   margin-top: -60px;
 }
 
-=======
-}
-.cafe-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  width: 100%;
-}
-
-.cafe-grid-hr {
-  opacity: 0.4;
-  color: #888;
-}
-
-.cafe-child-grid {
-  background-size: 135%;
-  background-position: center center;
-  transition: background-size 0.8s ease;
-  display: flex;
-  text-align: center;
-  color: white;
-}
-.cafe-child-grid:hover {
-  background-size: 150%;
-}
-.shadow {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: background-color 0.5s ease;
-}
-.shadow:hover {
-  background-color: rgba(0, 0, 0, 0);
-}
-.cafe-child-grid h3 {
-  margin-top: 50px;
-  font-size: 24px;
-}
-.cafe-child-grid p {
-  opacity: 1;
-}
-
-.cafe-grid-1 {
-  background-image: url("../../public/images/cafe-images/1.jpg");
-  grid-column: span 2;
-}
-.cafe-grid-2 {
-  background-image: url("../../public/images/cafe-images/2.jpg");
-}
-.cafe-grid-3 {
-  background-image: url("../../public/images/cafe-images/3.jpg");
-}
-.cafe-grid-4 {
-  background-image: url("../../public/images/cafe-images/4.jpg");
-}
-.cafe-grid-5 {
-  background-image: url("../../public/images/cafe-images/5.jpg");
-}
-.cafe-grid-6 {
-  background-image: url("../../public/images/cafe-images/6.jpg");
-  grid-column: span 2;
-}
-
-.cafe-grid-link {
-  color: white;
-}
-.cafe-grid-link:hover {
-  color: white;
-}
-.cafe-grid-link h5 {
-  text-align: center;
-}
-.cafe-grid-link h4 {
-  opacity: 1;
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-shadow: #111;
-}
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 .cafe-adress h3 {
   color: #3695d9;
 }
@@ -108,22 +22,11 @@
 .cafe-icon-link img {
   width: 30px;
 }
-<<<<<<< HEAD
 
-=======
-.cafe-icon-link p {
-  margin-left: 5px;
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
-}
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 .cafe-work-time p {
   margin-bottom: 5px;
 }
 
-<<<<<<< HEAD
 .cafe-panel {
   width: 100%;
   height: 70px;
@@ -192,8 +95,6 @@
 .cafe-slider-wrap-img {
   width: 97% !important;
 }
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 @media screen and (max-width: 1400px) {
   .cafe-grid {
     display: grid;
@@ -232,7 +133,6 @@
     height: 230px;
   }
 }
-<<<<<<< HEAD
 @media screen and (max-width: 600px) {
   .cafe-slider {
     margin: 0;
@@ -247,5 +147,3 @@
     height: auto;
   }
 }
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe

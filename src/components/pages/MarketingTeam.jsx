@@ -3,10 +3,6 @@ import LeftMenu from "../../UI/LeftMenu";
 import { CONTACTS_ROUTES } from "../../utils/consts";
 import MainReturnButton from "../../UI/MainReturnButton";
 import ContactsTable from "../ContactsTable";
-<<<<<<< HEAD
-=======
-
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 import "../../styles/Management.css";
 import { fetchMarketingContacts } from "../../http/allApi";
 import ErrorMessage from "../../UI/Error";
@@ -39,7 +35,6 @@ const MarketingTeam = () => {
       <MainReturnButton />
       <div className="management">
         <LeftMenu arr={CONTACTS_ROUTES} />
-<<<<<<< HEAD
         {load ? (
           <Loader />
         ) : (
@@ -47,11 +42,6 @@ const MarketingTeam = () => {
             <ContactsTable contactsList={marketingContacts} />
           </div>
         )}
-=======
-        <div className="management-content">
-          <ContactsTable contactsList={marketingContacts} />
-        </div>
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       </div>
     </div>
   );

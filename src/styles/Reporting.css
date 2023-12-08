@@ -15,10 +15,7 @@
   height: 70px;
   padding: 10px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 .button-text {
   display: flex;
   flex-direction: row;
@@ -32,12 +29,9 @@
   width: 10%;
 }
 @media screen and (max-width: 1200px) {
-<<<<<<< HEAD
   .header-h2 {
     margin-left: 20px;
   }
-=======
->>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   .reporting-content {
     width: 100%;
     padding: 20px;
