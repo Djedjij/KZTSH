@@ -5,12 +5,18 @@ import {
   addMarketingContacts,
 } from "../../http/allApi";
 import "../../styles/AdminStyles/NewsAdmin.css";
+<<<<<<< HEAD
 import { marketingContactsArr } from "../../utils/consts";
 
 const MarketingContactsAdmin = () => {
   const [marketingContacts, setMarketingContacts] = useState([]);
   const [load, setLoad] = useState(false);
   const [error, setError] = useState(null);
+=======
+
+const MarketingContactsAdmin = () => {
+  const [marketingContacts, setMarketingContacts] = useState([]);
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   const [formData, setFormData] = useState({
     name: "",
     job: "",
@@ -19,6 +25,7 @@ const MarketingContactsAdmin = () => {
   });
 
   useEffect(() => {
+<<<<<<< HEAD
     setLoad(true);
     fetchMarketingContacts().then((data) => {
       setLoad(false);
@@ -41,6 +48,15 @@ const MarketingContactsAdmin = () => {
         setMarketingContacts(data);
       }
     });
+=======
+    fetchMarketingContacts().then((data) => setMarketingContacts(data));
+  }, []);
+
+  const rerenderingMarketingContacts = async (id) => {
+    await deleteMarketingContacts(id);
+    const updatedMarketingContacts = await fetchMarketingContacts();
+    setMarketingContacts(updatedMarketingContacts);
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   };
 
   const handleInputChange = (e) => {
@@ -54,7 +70,10 @@ const MarketingContactsAdmin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       setLoad(true);
+=======
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       const formDataToSend = new FormData();
 
       // Добавляем данные из state в объект FormData
@@ -64,13 +83,18 @@ const MarketingContactsAdmin = () => {
       formDataToSend.append("phone", formData.phone);
 
       await addMarketingContacts(formDataToSend);
+<<<<<<< HEAD
       setLoad(false);
+=======
+
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       setFormData({
         name: "",
         job: "",
         internalPhone: "",
         phone: Number(),
       });
+<<<<<<< HEAD
       fetchMarketingContacts().then((data) => {
         setLoad(false);
         if (data.error) {
@@ -79,10 +103,16 @@ const MarketingContactsAdmin = () => {
           setMarketingContacts(data);
         }
       });
+=======
+
+      const updatedMarketingContacts = await fetchMarketingContacts();
+      setMarketingContacts(updatedMarketingContacts);
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
     } catch (error) {
       console.error("Ошибка при добавлении новости:", error);
     }
   };
+<<<<<<< HEAD
 
   // Удалить функцию после добавления данных
 
@@ -120,6 +150,8 @@ const MarketingContactsAdmin = () => {
     return <div className="error">{error}</div>;
   }
 
+=======
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return (
     <div>
       <h2>Добавить информацию</h2>
@@ -196,9 +228,12 @@ const MarketingContactsAdmin = () => {
           </tbody>
         </table>
       </div>
+<<<<<<< HEAD
       <button onClick={() => addAllMarketingContacts(marketingContactsArr)}>
         Добавить данные с фронта
       </button>
+=======
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
     </div>
   );
 };

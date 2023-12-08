@@ -43,7 +43,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+<<<<<<< HEAD
   border-radius: 4px;
+=======
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 }
 
 .shadow {

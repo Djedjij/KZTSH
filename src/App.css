@@ -415,6 +415,7 @@
   font-size: 0.9em;
   margin-left: 30px;
 }
+<<<<<<< HEAD
 /* video */
 .video {
   display: flex;
@@ -474,6 +475,9 @@
     margin-bottom: 10px;
   }
 }
+=======
+
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 /* news-slider1111111111111111111111111111111111111111 */
 .news-slider {
   margin-bottom: 20px;
@@ -500,6 +504,7 @@
     margin: 0 auto;
   }
 }
+<<<<<<< HEAD
 .error-wrapper {
   display: flex;
   justify-content: center;
@@ -545,3 +550,5 @@
     transform: rotate(360deg);
   }
 }
+=======
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe

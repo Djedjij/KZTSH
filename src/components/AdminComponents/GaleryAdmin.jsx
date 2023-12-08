@@ -4,6 +4,7 @@ import "../../styles/AdminStyles/NewsAdmin.css";
 
 const GaleryAdmin = () => {
   const [galery, setGalery] = useState([]);
+<<<<<<< HEAD
   const [error, setError] = useState(null);
   const [load, setLoad] = useState(false);
   const [formData, setFormData] = useState({
@@ -34,6 +35,21 @@ const GaleryAdmin = () => {
         setGalery(data);
       }
     });
+=======
+  const [formData, setFormData] = useState({
+    name: "",
+    img: null,
+  });
+
+  useEffect(() => {
+    fetchGalery().then((data) => setGalery(data));
+  }, []);
+
+  const rerenderingGalery = async (id) => {
+    await deleteGalery(id);
+    const updatedGalery = await fetchGalery();
+    setGalery(updatedGalery);
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   };
 
   const handleInputChange = (e) => {
@@ -55,20 +71,28 @@ const GaleryAdmin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       setLoad(true);
 
+=======
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       const formDataToSend = new FormData();
 
       formDataToSend.append("name", formData.name);
       formDataToSend.append("img", formData.img);
 
       await addGalery(formDataToSend);
+<<<<<<< HEAD
       setLoad(false);
+=======
+
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       setFormData({
         name: "",
         img: null,
       });
 
+<<<<<<< HEAD
       await fetchGalery().then((data) => {
         if (data.error) {
           setError(data.error);
@@ -92,6 +116,14 @@ const GaleryAdmin = () => {
     return <div className="error">{error}</div>;
   }
 
+=======
+      const updatedGalery = await fetchGalery();
+      setGalery(updatedGalery);
+    } catch (error) {
+      console.error("Ошибка при добавлении новости:", error);
+    }
+  };
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   return (
     <div className="admin-content">
       <h2>Добавить фотографию в галерею</h2>

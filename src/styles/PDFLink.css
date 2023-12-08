@@ -6,12 +6,20 @@
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+<<<<<<< HEAD
   margin-bottom: 5px;
+=======
+  margin-bottom: 20px;
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 }
 .reporting-link {
   text-decoration: none;
   color: #3695d9;
+<<<<<<< HEAD
   margin-bottom: 8px;
+=======
+  margin-bottom: 3px;
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 }
 .reporting-link:hover {
   text-decoration: none;

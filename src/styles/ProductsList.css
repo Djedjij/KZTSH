@@ -48,8 +48,12 @@
   opacity: 0.8;
 }
 .product-card-desc p {
+<<<<<<< HEAD
   margin-top: 20px;
   font-size: 1em;
+=======
+  font-size: 0.86667em;
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   opacity: 0.6;
 }
 

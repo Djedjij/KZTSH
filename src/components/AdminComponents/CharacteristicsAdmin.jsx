@@ -25,7 +25,11 @@ const СharacteristicsAdmin = (props) => {
       formDataToSend.append("value", formData.value);
 
       await addCharacteristics(formDataToSend, props.id);
+<<<<<<< HEAD
       // await props.renderItems();
+=======
+      await props.renderItems();
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       setFormData({
         name: "",
         value: "",
@@ -58,9 +62,13 @@ const СharacteristicsAdmin = (props) => {
           />
         </label>
         <br />
+<<<<<<< HEAD
         <button className="characteristics-btn" type="submit">
           Добавить информацию
         </button>
+=======
+        <button type="submit">Добавить характеристику</button>
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
       </form>
     </div>
   );

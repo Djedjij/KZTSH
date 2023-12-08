@@ -8,6 +8,7 @@
   margin-bottom: 20px;
   margin-left: 0;
 }
+<<<<<<< HEAD
 /* Стилизация самой формы */
 form {
   width: 100%;
@@ -59,12 +60,33 @@ form textarea {
   border-radius: 3px;
   resize: vertical; /* Разрешить изменение размеров только по вертикали */
   margin-bottom: 20px;
+=======
+.admin-content input {
+  margin-bottom: 20px;
+  border: 1px solid #3695d9;
+  border-radius: 2px;
+}
+.admin-content:focus {
+  background-color: lightblue;
+}
+
+.admin-content textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
   resize: none;
 }
 
 label {
   font-size: 18px;
 }
+<<<<<<< HEAD
 
 .admin-content {
   margin-top: 20px;
@@ -76,6 +98,11 @@ label {
   height: 40px;
   font-size: 12px;
   padding: 5px;
+=======
+.admin-content .red-btn {
+  background-color: rgb(197, 44, 44);
+  color: #f8f8f8;
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 }
 .admin-content button {
   cursor: pointer;
@@ -99,8 +126,13 @@ label {
   border-radius: 4px;
   padding: 10px;
 }
+<<<<<<< HEAD
 .admin-content img {
   width: 400px;
+=======
+.admin-elem img {
+  width: 300px;
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
 }
 .admin-elem button {
   width: 50%;
@@ -155,6 +187,7 @@ label {
 .table-characteristics {
   padding: 20px;
 }
+<<<<<<< HEAD
 .item-admin {
   border: 5px solid #3695d9;
   padding: 15px;
@@ -181,3 +214,5 @@ label {
   margin-left: 20px;
   margin-bottom: 20px;
 }
+=======
+>>>>>>> ee089ccc58399865905efea16cecd4bb994ca5fe
