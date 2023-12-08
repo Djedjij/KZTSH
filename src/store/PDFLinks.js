@@ -213,42 +213,42 @@ export const pricesLinks = [
 export const anticorruptionLinks = [
   {
     name: "План мероприятий по противодействию коррупции на 2023-2025 годы",
-    src: "./pdf/pdf-anticorruption/План мероприятий по противодействию коррупции на 2023-2025 годы.pdf",
+    src: "/pdf/pdf-anticorruption/План мероприятий по противодействию коррупции на 2023-2025 годы.pdf",
     id: "1",
   },
   {
     name: "Положение о комиссии по противодействию коррупции",
-    src: "./pdf/pdf-anticorruption/Положение о комиссии по противодействию коррупции.pdf",
+    src: "/pdf/pdf-anticorruption/Положение о комиссии по противодействию коррупции.pdf",
     id: "2",
   },
   {
     name: "Контактные телефоны членов комиссии",
-    src: "./pdf/pdf-anticorruption/Контактные телефоны членов комиссии.pdf",
+    src: "/pdf/pdf-anticorruption/Контактные телефоны членов комиссии.pdf",
     id: "3",
   },
   {
     name: "Положение о порядке работы телефона доверия",
-    src: "./pdf/pdf-anticorruption/Положение о порядке работы телефона доверия.pdf",
+    src: "/pdf/pdf-anticorruption/Положение о порядке работы телефона доверия.pdf",
     id: "4",
   },
   {
     name: "Положение о сдаче коррупционных подарков",
-    src: "./pdf/pdf-anticorruption/Положение о сдаче коррупционных подарков.pdf",
+    src: "/pdf/pdf-anticorruption/Положение о сдаче коррупционных подарков.pdf",
     id: "5",
   },
   {
     name: "План работы комиссии на 2023 год",
-    src: "./pdf/pdf-anticorruption/План работы комиссии на 2023 год.pdf",
+    src: "/pdf/pdf-anticorruption/План работы комиссии на 2023 год.pdf",
     id: "6",
   },
   {
     name: "Профилактические статьи",
-    src: "./pdf/pdf-anticorruption/Профилактические статьи.pdf",
+    src: "/pdf/pdf-anticorruption/Профилактические статьи.pdf",
     id: "7",
   },
   {
     name: "Памятка о борьбе с коррупцией",
-    src: "./pdf/pdf-anticorruption/Памятка о борьбе с коррупцией.pdf",
+    src: "/pdf/pdf-anticorruption/Памятка о борьбе с коррупцией.pdf",
     id: "8",
   },
 ];

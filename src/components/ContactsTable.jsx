@@ -1,14 +1,14 @@
 import React from "react";
-
+import "../styles/DirectorsContacts.css";
 const ContactsTable = (props) => {
   return (
-    <div className="table">
-      <table>
+    <div>
+      <table className="contacts-table">
         <thead>
           <tr>
             <th>Должность</th>
             <th>ФИО</th>
-            <th>Внутренний телефон</th>
+            <th className="phone-th">Внутренний телефон</th>
             <th>Телефон</th>
           </tr>
         </thead>

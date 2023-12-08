@@ -21,12 +21,16 @@ h2 {
   margin-top: 50px;
   font-size: 36px;
 }
+.info-p {
+  margin-top: 20px;
+}
 p {
   opacity: 0.8;
   width: 100%;
   margin-top: 20px;
   float: right;
   font-size: 16px;
+  font-weight: 400;
   margin-right: 20px;
   margin-bottom: 20px;
 }

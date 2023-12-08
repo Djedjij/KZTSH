@@ -11,7 +11,7 @@ const LeftMenu = (props) => {
     <div className="menu">
       {props.arr.map((el, index) => (
         <Link
-          className={activeLink === index ? "a-active" : "a"}
+          className={activeLink === index ? "a" : "a"}
           onClick={() => handleLinkClick(index)}
           to={el.path}
           key={el.path}

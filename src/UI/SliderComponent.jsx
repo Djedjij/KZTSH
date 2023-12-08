@@ -30,7 +30,7 @@ const SliderComponent = ({ images }) => {
           <img
             className="slider-img"
             key={el}
-            src={el}
+            src={process.env.REACT_APP_API_URL + el}
             alt="category"
             onClick={() => showModal(index)}
           />

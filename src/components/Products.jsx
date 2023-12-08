@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "./Product";
 import { Link } from "react-router-dom";
-const Products = (props) => {
+const Products = ({ items }) => {
   return (
     <div className="products">
       <div className="description">
@@ -18,7 +18,7 @@ const Products = (props) => {
         </Link>
       </div>
       <div className="product-main-list">
-        {props.items.map((el) => (
+        {items.map((el) => (
           <Product key={el.id} item={el} />
         ))}
       </div>

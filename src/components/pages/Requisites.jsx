@@ -3,7 +3,7 @@ import LeftMenu from "../../UI/LeftMenu";
 import { ABOUT_ROUTES, requisites } from "../../utils/consts";
 import MainReturnButton from "../../UI/MainReturnButton";
 import "../../styles/Requisites.css";
-import { Link } from "react-router-dom";
+
 const Requisites = () => {
   return (
     <div>
@@ -22,7 +22,7 @@ const Requisites = () => {
             <table className="table">
               <thead>
                 <tr>
-                  <th>№</th>
+                  <th className="table-number">№</th>
                   <th>Наименование</th>
                   <th>Сведения</th>
                 </tr>
@@ -30,21 +30,31 @@ const Requisites = () => {
               <tbody>
                 {requisites.map((el) => (
                   <tr key={el.number}>
-                    <td>{el.number}</td>
+                    <td className="table-number">{el.number}</td>
                     <td>{el.name}</td>
                     <td>{el.info}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
-            <Link className="requisites-link" to="">
-              <img
-                className="pdf-image"
-                src="../../images/pdf-blue.png"
-                alt="pdf"
-              />
-              <p>Скачать PDF версию с печатью и подписью</p>
-            </Link>
+            <div className="pdf-link">
+              <a
+                className="requisites-link"
+                href="../../pdf/Карточка организации.pdf"
+              >
+                <img
+                  className="pdf-image"
+                  src="../../images/pdf-blue.png"
+                  alt="pdf"
+                />
+              </a>
+              <a
+                className="requisites-link-a"
+                href="../../pdf/Карточка организации.pdf"
+              >
+                Скачать PDF версию с печатью и подписью
+              </a>
+            </div>
           </div>
         </div>
       </div>

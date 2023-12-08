@@ -12,20 +12,21 @@ const Hostel = () => {
         <LeftMenu arr={SERVISES_ROUTES} />
         <div className="hostel-content">
           <div className="hostel-content-desc">
-            <div>
-              <h3>Адрес</h3>
-              <h5>ул. 50 лет Октября, д. 5</h5>
-              <h3>График работы</h3>
-              <h5>Ежедневно с 6.00 до 2.00</h5>
-              <h3>Контактый телефон</h3>
-              <h5>8-10-375-1775-2-45-07</h5>
+            <div className="hostel-content-adress">
+              <div>
+                <h3>Адрес</h3>
+                <h5>ул. 50 лет Октября, д. 5</h5>
+              </div>
+              <div>
+                <h3>График работы</h3>
+                <h5>Ежедневно с 6.00 до 2.00</h5>
+              </div>
+              <div>
+                <h3>Контактый телефон</h3>
+                <h5>8-10-375-1775-2-45-07</h5>
+              </div>
             </div>
-            <iframe
-              title="hostel-map"
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad7ddcf90bc5fd969a6796c6a0d61563f7cdfae04bceb16a3b4cd94d814357f29&amp;source=constructor"
-              width="800"
-              height="451"
-            ></iframe>
+            <img src="/images/hostel.jpg" alt="hostel" />
           </div>
           <div>
             <p>

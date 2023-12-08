@@ -26,7 +26,7 @@ const ButtonUp = () => {
       onClick={handleClick}
     >
       <div className={`fa fa-chevron-up ${showButton}`}>
-        <img src="./images/UI-images/arrowUp.png" alt="arrow" />
+        <img src="/images/UI-images/arrowUp.png" alt="arrow" />
       </div>
     </div>
   );

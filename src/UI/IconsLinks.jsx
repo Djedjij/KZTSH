@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const IconsLinks = () => {
   return (
-    <div>
+    <div className="icons-links-wrapper">
       <div className="icons-links">
         <div className="icons-link">
           <Link to="/products">

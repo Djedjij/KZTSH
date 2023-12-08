@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/DirectorPhotoContacts.css";
-import { directorPhotoContacts } from "../utils/consts";
-const DirectorsPhotoContacts = () => {
+
+const DirectorsPhotoContacts = (props) => {
   return (
     <div className="directorPhotoContacts">
-      {directorPhotoContacts.map((el) => (
+      {props.directorPhotoContacts.map((el) => (
         <div key={el.job} className="director-photo">
-          <img src={el.img} alt={el.name} />
+          <img src={process.env.REACT_APP_API_URL + el.image} alt={el.name} />
           <p>{el.job}</p>
           <p>{el.name}</p>
         </div>

@@ -1,0 +1,104 @@
+.partners-grid-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.partners-grid {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 960px) {
+  .partners-grid {
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .partners-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .partners-child-grid {
+    height: 300px;
+  }
+}
+.partners-grid-hr {
+  opacity: 0.4;
+  color: #888;
+}
+.partners-child-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 4px;
+}
+
+.shadow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.5s ease;
+  overflow: hidden;
+}
+
+.shadow:hover > * {
+  transform: scale(1.1); /* Увеличиваем содержимое при наведении */
+  transition: transform 0.5s ease; /* Добавляем анимацию увеличения */
+}
+.shadow:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.partners-grid-1 {
+  background-image: url("../../public/images/partners-images/amkodor.jpg");
+}
+.partners-grid-2 {
+  background-image: url("../../public/images/partners-images/belarus.jpg");
+}
+.partners-grid-3 {
+  background-image: url("../../public/images/partners-images/belaz.jpg");
+  grid-column: span 2;
+}
+.partners-grid-4 {
+  background-image: url("../../public/images/partners-images/maz.jpg");
+  grid-column: span 2;
+}
+.partners-grid-5 {
+  background-image: url("../../public/images/partners-images/moaz.jfif");
+}
+.partners-grid-6 {
+  background-image: url("../../public/images/partners-images/mzkt.jpg");
+}
+
+.partners-grid-link {
+  color: white;
+  opacity: 0.8;
+}
+.partners-grid-link:hover {
+  color: white;
+  opacity: 1;
+}
+.partners-grid-link h5 {
+  text-align: center;
+}
+.partners-grid-link h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-shadow: #111;
+}

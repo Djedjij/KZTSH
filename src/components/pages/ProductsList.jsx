@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import MainReturnButton from "../../UI/MainReturnButton";
 import LeftMenu from "../../UI/LeftMenu";
 import "../../styles/ProductsList.css";
-import { items, itemsLeftMenu } from "../../utils/consts";
 import { Link } from "react-router-dom";
+import ItemContext from "../../utils/context";
+import ErrorMessage from "../../UI/Error";
+import Loader from "../../UI/Loader";
 const ProductsList = () => {
+  const itemsProps = useContext(ItemContext);
+  const { items, error, load } = itemsProps;
+
+  const itemsLeftMenu = items.map((el) => {
+    return {
+      name: el.title,
+      path: `/products/${el.id}`,
+    };
+  });
+  if (error) {
+    return <ErrorMessage />;
+  }
+  if (load) {
+    return (
+      <div className="loader-wrapper-app">
+        <Loader />
+      </div>
+    );
+  }
   return (
     <div>
-      <h2>Каталог продукции</h2>
+      <h2 className="header-h2">Каталог продукции</h2>
       <MainReturnButton />
       <div className="product-list">
         <LeftMenu arr={itemsLeftMenu} />
@@ -18,19 +39,16 @@ const ProductsList = () => {
               className="product-card"
               to={`/products/${product.id}`}
             >
-              <div key={product.id}>
+              <div className="product-card-wrapper" key={product.id}>
                 <img
                   className="icon-image"
-                  src={`../../images/product-icons/${product.id}.png`}
+                  src={process.env.REACT_APP_API_URL + product.icon}
                   alt="icon"
                 ></img>
                 <div className="product-card-desc">
                   <h3>{product.title}</h3>
-                  <p>Количество товаров:{product.count}</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error, culpa!
-                  </p>
+                  <h5>Количество товаров: {product.categories.length}</h5>
+                  <p>{product.description}</p>
                 </div>
               </div>
             </Link>

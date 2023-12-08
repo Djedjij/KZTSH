@@ -1,27 +1,124 @@
 .category {
   display: flex;
-
   flex-direction: row;
   margin-top: 50px;
   margin-left: 50px;
+  width: 90%;
 }
+
 .category-slider {
-  width: 30%;
+  width: 40%;
 }
 .category-description {
   margin-left: 30px;
+  width: 60%;
+  margin-right: 30px;
+}
+.category-characteristics h3 {
+  font-size: 20px;
+  color: rgb(9, 84, 197);
 }
 .category h3 {
   margin-bottom: 20px;
 }
 
 .product-page-info {
-  display: flex;
   box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
-  width: 30%;
-  height: max-content;
-  flex-direction: row;
-  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 5px;
+  opacity: 0.8;
   padding: 20px;
-  margin-left: 50px;
+  margin-bottom: 10px;
+  color: rgb(9, 84, 197);
+}
+
+/* characteristick */
+.category-table {
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+}
+.category-table thead th {
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  background: #d8d8d8;
+  font-size: 14px;
+}
+.category-table thead tr th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.category-table thead tr th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.category-table tbody td {
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  vertical-align: top;
+}
+.category-table tbody tr:nth-child(even) {
+  background: #f3f3f3;
+}
+.category-table tbody tr td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.category-table tbody tr td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.table-characteristics {
+  padding: 20px;
+}
+.category-button {
+  margin-top: -40px;
+  background-color: white;
+  cursor: pointer;
+  color: #3695d9;
+  border: 1px solid #3695d9;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 1150px) {
+  .category {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 20px;
+    margin-left: 20px;
+  }
+  .category-slider {
+    width: 100%;
+  }
+  .category-description {
+    width: 100%;
+    margin-left: 0;
+  }
+  .category-description p {
+    margin-top: -10px;
+  }
+  .category-table {
+    margin-top: -15px;
+  }
+  .category-table-container {
+    width: 90%;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 735px) {
+  .category-table-container {
+    display: none;
+  }
+}
+
+.dropdown-category {
+  margin-bottom: 20px;
+  height: max-content;
+}
+
+.category-noInfo {
+  opacity: 0.8;
+  margin-top: 100px;
+  margin-bottom: 125px;
 }

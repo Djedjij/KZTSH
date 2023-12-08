@@ -30,7 +30,8 @@ const Documents = () => {
           <div className="documents-a">
             <a
               className="img-link"
-              href="../../pdf/Руководство по качеству для поставщиков ОАО КЗТШ.pdf"
+              href="../../pdf/Руководство по качеству для поставщиков.pdf
+              "
             >
               <img
                 className="pdf-img"
@@ -40,7 +41,7 @@ const Documents = () => {
             </a>
             <a
               className="documents-link"
-              href="../../pdf/Руководство по качеству для поставщиков ОАО КЗТШ.pdf"
+              href="../../pdf/Руководство по качеству для поставщиков.pdf"
             >
               Руководство по качеству для поставщиков ОАО "КЗТШ"
             </a>

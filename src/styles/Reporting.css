@@ -2,8 +2,47 @@
   display: flex;
   justify-content: space-between;
 }
-.reporting-links {
-  width: 65%;
+.reporting-content {
+  width: 70%;
   text-decoration: none;
   margin-bottom: 10px;
+}
+.reporting-button {
+  background-color: white;
+  border: 2px solid #3695d9;
+  color: #3695d9;
+  width: 90%;
+  height: 70px;
+  padding: 10px;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
+}
+.button-text h4 {
+  width: 20%;
+}
+.button-text p {
+  width: 10%;
+}
+@media screen and (max-width: 1200px) {
+  .header-h2 {
+    margin-left: 20px;
+  }
+  .reporting-content {
+    width: 100%;
+    padding: 20px;
+    margin-right: 10px;
+  }
+  .reporting-button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .button-text h4 {
+    width: 50%;
+  }
 }

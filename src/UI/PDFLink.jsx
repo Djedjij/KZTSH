@@ -4,7 +4,11 @@ const PDFLink = (props) => {
   return (
     <div className="reporting-links">
       {props.reporting.map((el) => (
-        <a className="reporting-link" href={el.src} key={el.src}>
+        <a
+          className="reporting-link"
+          href={process.env.REACT_APP_API_URL + el.src}
+          key={el.src}
+        >
           {el.name}
         </a>
       ))}
