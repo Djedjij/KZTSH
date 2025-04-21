@@ -16,26 +16,21 @@ const Reporting = () => {
 
   useEffect(() => {
     document.title = "Отчетность" + titleName;
-    const localData = localStorage.getItem("reporting");
-    if (localData) {
-      setReporting(JSON.parse(localData));
-    } else {
-      setLoad(true);
-      fetchReporting()
-        .then((data) => {
-          setLoad(false);
-          if (data.error) {
-            setError(data.error);
-          } else {
-            setReporting(data);
-            localStorage.setItem("reporting", JSON.stringify(data)); // Save to localStorage.
-          }
-        })
-        .catch((error) => {
-          setLoad(false);
-          setError(error.message);
-        });
-    }
+    setLoad(true);
+    fetchReporting()
+      .then((data) => {
+        setLoad(false);
+        if (data.error) {
+          setError(data.error);
+        } else {
+          setReporting(data);
+          localStorage.setItem("reporting", JSON.stringify(data));
+        }
+      })
+      .catch((error) => {
+        setLoad(false);
+        setError(error.message);
+      });
   }, []);
 
   if (error) {
