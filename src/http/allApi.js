@@ -1,5 +1,5 @@
 import { $host, $authHost } from ".";
-import jwtDecode from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 
 // news-api
 export const fetchNews = async () => {
